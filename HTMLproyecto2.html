@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Raymond Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Time New Roman
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 20px;
+  text-align: center;
+  background:LawnGreen;
+  color: black;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 60px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: black;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align:center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: blue;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: blue;
+  width: 100%;
+  z-index: 1;
+}
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color:black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color:lawngreen ;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Raymond Website</h1>
+  <p>First homework.</p>
+</div>
+
+<div class="navbar">
+  <a href = "file:///C:/Users/Raymond/Documents/Universidad/Internet%20Programming/HTMLproyecto2.html"
+  <a href="#home">Home</a>
+  <div class="subnav">
+    <button class="subnavbtn">About me <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+<ul>
+
+  <a href = "file:///C:/Users/Raymond/Documents/Universidad/Internet%20Programming/HTMLproyecto2Gallery.html"
+      <a href="#Gallery">Gallery</a>
+  <a href = "file:///C:/Users/Raymond/Documents/Universidad/Internet%20Programming/HTMLproyecto2Resume.html"
+      <a href="#Resume">Resume</a>
+</ul>
+    </div>
+  </div> 
+  
+  <div class="subnav">
+     
+  </div>
+  
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2><ins>Photo of me:</ins></h2>
+    <!-- <p>   <img src="foto2.jpg" width="300" height="400"></i> </p> -->
+   <img style="float:right; margin:10px;" src="foto2.jpg" width="300" height="450"/>
+<br>
+<br>
+<br>
+        <h3> <i>Hi there! Welcome to my website. </i></h3>
+        <h3> <i>My name is Raymond Abdier Cruz Rodriguez </i></h3>
+        <h3> <i>I'm 22 years old</i> </h3>
+        <h3> <i>From Puerto Rico.</i></h3>
+   <br>
+   
+
+
+</body>
+</html>
